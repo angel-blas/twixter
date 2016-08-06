@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Tweexter</title>
+    <meta charset= UTF-8>
+    <style type="text/css">
+    body{
+        margin:0;
+        padding:0;
+        font-family: sans-serif;
+    }
+    #contenedor{
+        background: green;
+        vertical-align: left;
+        margin-right: 45%;
+        
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.7);
+        padding: 1px;
+    }
+
+    #chiquito{
+        background-color: orange;
+        width: 98%;
+        margin: auto;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 3px 15px;
+    }
+
+    section{
+        margin: 10px 30px;  
+    }
+
+    #line{
+        background-color: green;
+        color: white;
+    }
+    footer{
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body background="images/pika.jpg">
+    <h1 id="line">Twixter</h1>
+    
+         {% block content %}
+    {% endblock content%}
+
+   
+</body>
+</html>

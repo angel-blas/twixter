@@ -1,0 +1,25 @@
+{%extends 'base.html' %}
+
+{%block content%}
+    <div id="contenedor">
+      <div id="chiquito">
+        <header>
+            <h2>Twixter Line</h2>
+        </header>
+    <ul>
+        {%for twit in twits%}
+            <a href="{{twit.get_absolute_url}}">
+                <h1>{{twit.titulo}}</h1></a>  
+                <p>{{twit.cuerpo|truncatewords:5}}</p>
+                <p id='fecha'>{{twit.fecha}}</p>
+        {%empty%}
+            <h1>No hay ningún twitt chavotl</h1>
+        {%endfor%}
+    </ul>
+
+        <footer>
+            (c) Propiedad de Twíxter y sus secuaces
+        </footer>
+      </div>    
+    </div>
+{%endblock content%}
